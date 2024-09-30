@@ -190,6 +190,13 @@ fr:
       confirm_button: "Confirmer le paiement"
 
   static:
+    index:
+      title: Votre toit en toute confiance
+      description_html: Notre équipe de <strong>couvreurs professionnels</strong> est là pour vous aider à protéger votre maison.<br> Que ce soit pour le <strong>nettoyage de votre toiture et gouttières</strong>, la <strong>réparation de votre toit</strong> ou <strong>l'installation de nouvelles gouttières</strong>, nous sommes là pour vous aider.
+      cta: Estimation immédiate gratuite
+      reassurance_1: +500 couvreurs pro
+      reassurance_2: 96% du temps moins cher
+      reassurance_3: +1000 clients satisfaits
     no_plans_html: "Il n'y a pas de plans de prix configurés. %{link}."
     pricing:
       heading: "Abonnements"
@@ -204,7 +211,7 @@ fr:
     terms:
       title: "Conditions d’utilisation"
 
-  shared:
+  application:
     footer:
       about: "À propos"
       privacy: "Vie privée"

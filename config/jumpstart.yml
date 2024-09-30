@@ -1,0 +1,20 @@
+---
+application_name: roofters.pro
+business_name: roofters.pro
+business_address: |-
+  9 impasse des hibiscus
+  38460 Chamagnieu, France
+domain: roofters.pro
+support_email: contact@roofters.pro
+default_from_email: Roofters <no-reply@roofters.pro>
+background_job_processor: sidekiq
+email_provider: postmark
+personal_accounts: true
+apns: false
+fcm: false
+integrations:
+omniauth_providers:
+payment_processors:
+- stripe
+multitenancy:
+gems:

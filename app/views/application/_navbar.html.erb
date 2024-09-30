@@ -1,8 +1,8 @@
 <nav class="flex flex-wrap items-center justify-between px-4 py-2 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-sm font-medium" data-controller="toggle">
   <div class="flex items-center flex-shrink-0 mr-6">
-    <%= link_to root_path, class: "flex items-center text-gray-700 hover:text-gray-800 dark:text-gray-100 dark:hover:text-gray-300" do %>
-      <%= render_svg "logo", styles: "fill-current" %>
-      <span class="sr-only"><%= Jumpstart.config.application_name %></span>
+    <%= link_to root_path, class: "flex items-center gap-2 text-blue-700" do %>
+      <%= render_svg "logo", styles: "fill-current h-8 w-8" %>
+      <span class="text-2xl font-righteous righteous"><%= Jumpstart.config.application_name.capitalize %></span>
     <% end %>
   </div>
   <div class="block lg:hidden">
@@ -102,8 +102,8 @@
           </div>
         </div>
       <% else %>
-        <%= link_to t(".log_in"), new_user_session_path, class: 'nav-link' %>
-        <%= link_to t(".sign_up"), new_user_registration_path, class: 'btn btn-primary' %>
+        <%#= link_to t(".log_in"), new_user_session_path, class: 'nav-link' %>
+        <%#= link_to t(".sign_up"), new_user_registration_path, class: 'btn btn-primary' %>
       <% end %>
     </div>
   </div>

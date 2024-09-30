@@ -1,10 +1,38 @@
-<div class="py-32 max-w-2xl m-auto text-center flex flex-col items-center justify-center">
-  <h1 class="mb-2">Welcome to Jumpstart</h1>
-  <p class="mb-6 text-gray-700 dark:text-gray-200 leading-normal text-xl">Jumpstart is the perfect starting point for your next Ruby on Rails app. Skip the boilerplate setup and build your app faster.</p>
-  <% if Rails.env.development? %>
-    <div class="flex flex-col items-center md:flex-row">
-      <%= link_to "Configure Jumpstart", jumpstart_path, data: { turbo: false }, class: "btn btn-primary lg:mr-4 mr-0 lg:mb-0 mb-4" %>
-      <%= link_to "Read the Docs", jumpstart.docs_path, target: :_blank, data: { turbo: false }, class: "btn btn-secondary btn-outline lg:mr-4 mr-0 lg:mb-0 mb-4" %>
+<div class="relative isolate my-12">
+  <div class="bg-sand-500 rounded-xl mx-auto max-w-7xl px-6 py-24  lg:flex lg:items-center lg:gap-x-10 lg:px-8 ">
+    <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+
+      <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-deep-blue-500 sm:text-6xl">
+        <%= t('.title') %>
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-deep-blue-500">
+        <%= t('.description_html') %>
+      </p>
+      <div class="mt-10 flex items-center gap-x-6">
+        <a href="#" class="btn btn-primary btn-large text-lg">
+          <%= t('.cta') %>
+          <%= render_svg "svg/arrow-right", styles: "w-4" %>
+        </a>
+      </div>
+      <%# Reassurance %>
+      <div class="mt-16 text-center text-sm ">
+        <% elements = [
+          { icon: "wrench", text: t('.reassurance_1') },
+          { icon: "currency-euro", text: t('.reassurance_2') },
+          { icon: "user-group", text: t('.reassurance_3') },
+        ] %>
+        <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-x-4 sm:gap-y-0">
+          <% elements.each do |element| %>
+            <div class="flex items-center justify-center gap-x-2">
+              <%= render_svg "svg/#{element[:icon]}", styles: "w-6" %>
+              <span class="font-medium text-sm whitespace-nowrap text-deep-blue-500"><%= element[:text] %></span>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
+    <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+      <%= image_tag "beard_roofer.webp", class: "rounded-xl mx-auto w-[22.875rem] max-w-full drop-shadow-xl" %>
+    </div>
+  </div>
 </div>

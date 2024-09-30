@@ -41,9 +41,30 @@ module.exports = {
         light: colors.gray,
         dark: colors.gray,
         disabled: colors.gray,
+        'blue-ribbon': {
+          '50': '#F2FBFF', 
+          '100': '#E6F7FF', 
+          '200': '#C2E8FF', 
+          '300': '#9ED5FF', 
+          '400': '#53A5FC', 
+          '500': '#0965FC', 
+          '600': '#0959E3', 
+          '700': '#0643BD', 
+          '800': '#032F96', 
+          '900': '#022273', 
+          '950': '#01134A'
+        },
+        'sand': {
+          '500': '#F9F3EF'
+        }, 
+        'deep-blue': {
+          '500': '#051257'
+        },
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        'poppins': ['Poppins', 'sans-serif'],
+        'righteous': ['Righteous', 'cursive'],
       },
     },
   },
