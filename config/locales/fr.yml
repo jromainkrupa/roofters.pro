@@ -191,6 +191,15 @@ fr:
 
   static:
     index:
+      meta:
+        title: "Votre toit en toute confiance | Roofters"
+        description: "Des couvreurs professionnels pour votre maison. Nettoyage de toiture, gouttières, réparation de toit, installation de gouttières."
+        keywords:
+          - couvreurs
+          - nettoyage de toiture
+          - gouttières
+          - réparation de toit
+          - installation de gouttières
       title: Votre toit en toute confiance
       description_html: Notre équipe de <strong>couvreurs professionnels</strong> est là pour vous aider à protéger votre maison.<br> Que ce soit pour le <strong>nettoyage de votre toiture et gouttières</strong>, la <strong>réparation de votre toit</strong> ou <strong>l'installation de nouvelles gouttières</strong>, nous sommes là pour vous aider.
       cta: Estimation immédiate gratuite

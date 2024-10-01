@@ -7,6 +7,15 @@
       <% end %>
       <%= Jumpstart.config.application_name %>
     </title>
+    <% if content_for?(:description) %>
+      <meta name="description" content="<%= yield :description %>">
+    <% end %>
+    <% if content_for?(:keywords) %>
+      <meta name="keywords" content="<%= content_for(:keywords) %>">
+    <% end %>
+    <!-- canonical -->
+    <%= canonical_link_tag %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= viewport_meta_tag %>
