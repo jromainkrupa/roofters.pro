@@ -206,6 +206,13 @@ fr:
       reassurance_1: +500 couvreurs pro
       reassurance_2: 96% du temps moins cher
       reassurance_3: +1000 clients satisfaits
+      how_it_works:
+        title: Estimation instantanée gratuite
+        description: Ne perdez pas de temps à attendre, votre projet en 3 étapes simples.
+        step_1: "Décrivez votre projet"
+        step_2: "Choisissez votre couvreur"
+        step_3: "Vos travaux sont réalisés"
+
     no_plans_html: "Il n'y a pas de plans de prix configurés. %{link}."
     pricing:
       heading: "Abonnements"
